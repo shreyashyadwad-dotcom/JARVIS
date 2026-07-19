@@ -1,0 +1,30 @@
+# Python
+backend/venv/
+__pycache__/
+*.py[cod]
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment
+backend/.env
+.env
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Vector database
+backend/rag_store/
+
+# Uploaded documents
+backend/documents/
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
