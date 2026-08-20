@@ -16,12 +16,9 @@ jarvis-project/
 └── README.md
 ```
 
-## 1. Get a free Gemini API key
 
-Go to https://aistudio.google.com/apikey, sign in with a Google account, and create a key.
-It's free with generous rate limits for `gemini-1.5-flash`.
 
-## 2. Backend setup
+##  Backend setup
 
 ```bash
 cd backend
@@ -39,13 +36,9 @@ Run the server:
 uvicorn main:app --reload --port 8000
 ```
 
-The first run will:
-- Create `jarvis_history.db` (chat history)
-- Build a FAISS index from anything in `backend/documents/` (a starter file is already there)
 
-Test it's alive: open http://localhost:8000/api/health
 
-## 3. Frontend setup
+##  Frontend setup
 
 In a **second terminal**:
 
@@ -59,7 +52,7 @@ Open the URL it prints (usually http://localhost:5173).
 
 That's it — you now have a locally running Jarvis with a chat UI.
 
-## 4. Teach it about your own stuff (RAG)
+##  Teach it about your own stuff (RAG)
 
 Either:
 - Drop `.txt`, `.md`, or `.pdf` files into `backend/documents/` and restart the backend, or
